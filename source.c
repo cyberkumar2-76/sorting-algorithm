@@ -169,6 +169,22 @@ void sorting()
         }
     }
 }
+void middleNode()
+{
+    struct node *ptr = head;
+    int count = 0;
+    while(ptr != NULL)
+    {
+        count++;
+        ptr = ptr->next;
+    }
+    ptr = head;
+    for (int i = 0; i <count / 2; i++)
+    {
+        ptr= ptr->next;
+        printc("Middle node is : %d ptr->data");
+    }
+}
 
 /*SOLVED BY :-
 NAME = HEMANT
